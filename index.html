@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Countries</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Countries</h1>
+
+    <section class="pages">
+      <div class="list-countries">
+        <h2>List of Countries</h2>
+
+        <div id="searchWrapper">
+          <input
+            type="text"
+            name="searchBar"
+            id="searchBar"
+            placeholder="search for a country"
+          />
+        </div>
+        <select id="countries"></select>
+        <ul id="countryListList"></ul>
+
+        <!--<ul id="ulcountries"></ul>-->
+        <!--<li id="licountries"></li> -->
+      </div>
+
+      <div id="main-container">
+        <div id="flag-container">
+          <img src="" alt="" />
+        </div>
+
+        <br />
+
+        <div id="info-container">
+          <!--<select id="countries"></select> -->
+          <p>Capital: <span id="capital"></span></p>
+          <p>Dialing Code: <span id="dialing-code"></span></p>
+          <p>Population: <span id="population"></span></p>
+          <p>Currencies: <span id="currencies"></span></p>
+          <p>Region: <span id="region"></span></p>
+          <p>Subregion: <span id="subregion"></span></p>
+        </div>
+      </div>
+    </section>
+    <br />
+
+    <script src="main.js"></script>
+  </body>
+</html>
+
+<!--<script>
+  const loadNames = () => {
+    fetch("https://restcountries.eu/rest/v2/alpha/col")
+      .then((Response) => Response.json())
+      .then((code) => loadedNames(code));
+
+    fetch("https://jsonplaceholder.typicode.com/todos")
+      .then((response) => response.json())
+      .then((data) => console.log(JSON.stringify(data)));
+  };
+</script> -->
